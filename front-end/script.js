@@ -9,7 +9,7 @@ document.getElementById('registerForm')?.addEventListener('submit', async functi
     const telefone = document.getElementById('telefone').value;
     const password = document.getElementById('password').value;
 
-    const response = await fetch('<http://localhost:3000/back-end/app>', {
+    const response = await fetch('<http://localhost:5500/back-end/app>', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -27,7 +27,7 @@ document.getElementById('loginForm')?.addEventListener('submit', async function(
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
-    const response = await fetch('<http://localhost:3000/front-end/login>', {
+    const response = await fetch('<http://localhost:5500/front-end/login>', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
