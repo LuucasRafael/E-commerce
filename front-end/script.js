@@ -1,6 +1,6 @@
 // Register
 
-document.getElementById('postBtn')?.addEventListener('submit', async function(e) {
+document.getElementById('registerForm')?.addEventListener('submit', async function(e) {
     e.preventDefault();
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
