@@ -9,7 +9,7 @@ document.getElementById('postBtn')?.addEventListener('submit', async function(e)
     const telefone = document.getElementById('telefone').value;
     const password = document.getElementById('password').value;
 
-    fetch('<http://localhost:3000/back-end/app>', {
+    const response = await fetch('<http://localhost:3000/back-end/app>', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
